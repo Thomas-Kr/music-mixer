@@ -1,10 +1,7 @@
 #!/usr/bin/python
 import os
 
-from apiclient.discovery import build
 from apiclient.errors import HttpError
-
-from upload_video import get_authenticated_service
 
 
 # The CLIENT_SECRETS_FILE variable specifies the name of a file that contains

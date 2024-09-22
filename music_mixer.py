@@ -65,8 +65,8 @@ if __name__ == "__main__":
     #Download the audio
     try:
         streams = yt.streams
-        best_stream = streams.get_audio_only()
-        song_path = best_stream.download()
+        audio_stream = streams.get_audio_only()
+        song_path = audio_stream.download()
         
         MP4ToMP3(song_path, 'song.mp3')
         print("Audio has been downloaded")
@@ -74,7 +74,7 @@ if __name__ == "__main__":
         print(err)
 
     if render_muffled:
-        output_audio = 'output_songss/muffled.mp3'
+        output_audio = 'output_songs/muffled.mp3'
         if not exists(output_audio):
             try:
                 render_audio('song.mp3', output_audio, muffled_board)
@@ -85,15 +85,15 @@ if __name__ == "__main__":
         output_video = "output_videos/muffled.mp4"
         if not exists(output_video):
             try:
-                intro = "input_videos/muffledVideos/intro.mp4" 
-                main_clip = "input_videos/muffledVideos/main_part.mp4" 
+                intro = "input_videos/muffled_videos/intro.mp4" 
+                main_clip = "input_videos/muffled_videos/main_part.mp4" 
                 render_video(intro, main_clip, output_audio, output_video)
             except Exception as err:
                 print(f"Error occurred while rendering muffled.mp4: {err}")
                 logging.error(f"Error occurred while rendering muffled.mp4: {err}")
                 
     if render_spedup:
-        output_audio = 'output_songss/spedup.mp3'
+        output_audio = 'output_songs/spedup.mp3'
         if not exists(output_audio):
             try:
                 render_audio('song.mp3', output_audio, spedup_board, 1.2)
@@ -104,14 +104,14 @@ if __name__ == "__main__":
         output_video = "output_videos/spedup.mp4"
         if not exists(output_video):
             try:
-                main_clip = "input_videos/spedupVideos/main_part.mp4" 
+                main_clip = "input_videos/spedup_videos/main_part.mp4" 
                 render_video(main_clip, main_clip, output_audio, output_video)
             except Exception as err:
                 print(f"Error occurred while rendering spedup.mp4: {err}")
                 logging.error(f"Error occurred while rendering spedup.mp4: {err}")
         
     if render_slowed:
-        output_audio = 'output_songss/slowed.mp3'
+        output_audio = 'output_songs/slowed.mp3'
         if not exists(output_audio):
             try:
                 render_audio('song.mp3', output_audio, slowed_board, 0.8)
@@ -122,7 +122,7 @@ if __name__ == "__main__":
         output_video = "output_videos/slowed.mp4"
         if not exists(output_video):
             try:
-                main_clip = "input_videos/slowedVideos/main_part.mp4" 
+                main_clip = "input_videos/slowed_videos/main_part.mp4" 
                 render_video(main_clip, main_clip, output_audio, output_video)
             except Exception as err:
                 print(f"Error occurred while rendering slowed.mp4: {err}")
@@ -201,7 +201,7 @@ I want to make it clear that all rights to the original songs belong to their tr
         logging.error(f"Error occurred while removing {song_name}.mp3: {err}")
 
     if clear:
-        clear_videos("output_songss/")
+        clear_videos("output_songs/")
         clear_videos("output_videos/")
 
     print("Done!")
