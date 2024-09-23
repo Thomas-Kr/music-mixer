@@ -195,7 +195,7 @@ I want to make it clear that all rights to the original songs belong to their tr
             logging.error(f"Error occurred while uploading muffled song to Youtube: {err}")
             
     try:
-        remove(f"{song_name}.mp3")
+        remove(f"song.mp3")
     except Exception as err:
         print(err)
         logging.error(f"Error occurred while removing {song_name}.mp3: {err}")
