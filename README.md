@@ -33,7 +33,7 @@ git clone https://github.com/Thomas-Kr/music-mixer
 - Create a credential.
 - A screen will appear with the API key.
 
-4. Create *client_secrets.json* and enter your data from Youtube API v3:
+5. Create *client_secrets.json* and enter your data from Youtube API v3:
 
 ```json
 {
@@ -47,9 +47,9 @@ git clone https://github.com/Thomas-Kr/music-mixer
 }
 ```
 
-5. Open the project's directory in the console.
+6. Open the project's directory in the console.
 
-6. Launch *music_mixer.py*.
+7. Launch *music_mixer.py*.
 
 ## **Usage** 
 
