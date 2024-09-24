@@ -66,10 +66,11 @@ if __name__ == "__main__":
     try:
         streams = yt.streams
         audio_stream = streams.get_audio_only()
-        song_path = audio_stream.download()
+        audio_path = audio_stream.download()
         
-        MP4ToMP3(song_path, 'song.mp3')
+        MP4ToMP3(audio_path, 'song.mp3')
         print("Audio has been downloaded")
+        remove(audio_path)
     except Exception as err:
         print(err)
 
