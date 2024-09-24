@@ -1,6 +1,6 @@
 ## **Music Mixer**
 
-This Python project automates the process of downloading audio from YouTube, applying audio effects (sped-up, slowed, and muffled versions), rendering corresponding video files, and uploading the results to YouTube.
+This Python project automates the process of downloading audio from YouTube, applying audio effects (sped-up, slowed, and muffled versions), rendering corresponding video files, and uploading the results to YouTube. Currently, the project is being used on this YouTube channel: https://www.youtube.com/@zwayz228.
 
 ## **Installation** 
 
