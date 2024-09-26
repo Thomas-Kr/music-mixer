@@ -1,0 +1,18 @@
+2024-09-26 17:46:53 - ERROR: Error occurred while rendering muffled.mp3: Failed to open audio file: file does not exist: song.mp3
+2024-09-26 17:46:55 - ERROR: Error occurred while rendering muffled.mp4: MoviePy error: the file output_songs/muffled.mp3 could not be found!
+Please check that you entered the correct path.
+2024-09-26 17:46:55 - ERROR: Error occurred while rendering spedup.mp3: Failed to open audio file: file does not exist: song.mp3
+2024-09-26 17:46:56 - ERROR: Error occurred while rendering spedup.mp4: MoviePy error: the file output_songs/spedup.mp3 could not be found!
+Please check that you entered the correct path.
+2024-09-26 17:46:56 - ERROR: Error occurred while rendering slowed.mp3: Failed to open audio file: file does not exist: song.mp3
+2024-09-26 17:46:56 - ERROR: Error occurred while rendering slowed.mp4: MoviePy error: the file output_songs/slowed.mp3 could not be found!
+Please check that you entered the correct path.
+2024-09-26 18:02:10 - ERROR: Error occurred while rendering muffled.mp3: Unable to open audio file for writing: output_songs/muffled.mp3
+2024-09-26 18:02:11 - ERROR: Error occurred while rendering muffled.mp4: MoviePy error: the file output_songs/muffled.mp3 could not be found!
+Please check that you entered the correct path.
+2024-09-26 18:02:11 - ERROR: Error occurred while rendering spedup.mp3: Unable to open audio file for writing: output_songs/spedup.mp3
+2024-09-26 18:02:12 - ERROR: Error occurred while rendering spedup.mp4: MoviePy error: the file output_songs/spedup.mp3 could not be found!
+Please check that you entered the correct path.
+2024-09-26 18:02:12 - ERROR: Error occurred while rendering slowed.mp3: Unable to open audio file for writing: output_songs/slowed.mp3
+2024-09-26 18:02:13 - ERROR: Error occurred while rendering slowed.mp4: MoviePy error: the file output_songs/slowed.mp3 could not be found!
+Please check that you entered the correct path.
